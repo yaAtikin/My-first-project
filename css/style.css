@@ -1,0 +1,411 @@
+body{
+	margin: 0;
+}
+header{
+	background-color: #008080;
+	padding: 5px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.desk{
+	display: none
+}
+
+.big{
+	color: white;
+	display: inline-block;
+	font-family: 'Roboto Mono', monospace;
+	vertical-align: middle;
+	margin-left: 11%;
+	font-size: 37px;
+	float: left;
+}
+.nav a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
+	padding: 45px 20px;
+	vertical-align: middle;
+	font-size: 20px;
+	float: right;
+	transition: color 1s, background-color 1s;
+	border-radius: 10%;
+}
+.firsti{
+	margin-right: 15%;
+}
+
+.nav a:hover{
+	color: red;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.nav{
+		display: none;
+	}
+
+	.desk{
+		display: block;
+		height: 65px;
+	}
+	.big{
+		position: relative;
+		right: 140px;
+		font-size: 18px;
+	}
+	a{
+	position: relative;
+	left: 250px;
+	bottom: 35px;
+	font-size: 18px;
+	text-decoration: none;
+	}
+	a:focus{
+		color: blue;
+	}
+	img{
+		display: block;
+		position: relative;
+		right: 425px;
+		height: 200px;
+		width: auto;
+	}
+	.textPortfolio{
+		position: relative;
+		right: 550px;
+	}
+}
+
+.start{
+  clear: inherit;
+  height: 800px;
+  background-color: #0cf0ff;
+  width: 100%;
+}
+.start img{
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 150px;
+  border-radius: 50%;
+  position: relative;
+  top: 35px;
+  z-index: 90;
+}
+.start h2{
+  text-align: center;
+  margin-bottom:0;
+  font-size: 105px;
+  padding: 0;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Roboto Mono', monospace;  
+}
+
+.start i{
+  margin-top: 0;
+  position: relative;
+  left: 48%;
+  bottom: 40px;
+  font-size: 45px;
+  color: white;
+  padding: 10px;
+  background-color: #0cf0ff; 
+  margin-bottom: 0;
+  z-index: 80;
+}
+
+.start h3{
+ color: white;
+ font-size: 35px;
+ margin-top: 0;
+ margin-bottom: 30px;
+ text-align: center;
+ font-family: 'Roboto Mono', monospace;  
+}
+
+.hrWrapp{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.start hr{
+	background-color: white;
+	width: 300px;
+	height: 4px;
+	text-decoration: none;
+	border-radius: 15%;
+}
+
+.portfolio .hrWrapp hr{
+	background-color: #0cf0ff;
+	width: 300px;
+	height: 4px;
+	text-decoration: none;
+	border-radius: 15%;
+}
+
+.dave{
+	text-align: center;
+}
+.portfolio .dave i{
+  font-size: 50px;
+  color: #212b3d;
+  position: relative;
+  bottom: 45px;
+  background-color: white;
+  padding: 10px;
+}
+
+.portfolio{
+	min-height: 400px;
+	padding: 50px; 
+}
+
+.portfolio h2{
+	text-align: center;
+	font-size: 75px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: 'Roboto Mono', monospace;
+	padding-bottom: 30px;
+}
+
+.workExamples{
+	margin: 0 10%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.workItemWrapp{
+	margin-top: 0;
+	width: 30%;
+	height: 280px;
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.workItemWrapp img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.workItemWrapp .caption{
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1E2FFF;
+	transition: all ease .5s;
+	text-align: center;
+}
+
+.workItemWrapp:hover .caption{
+	opacity: .8;
+}
+.workItemWrapp .caption .hoverText{
+	font-size: 70px;
+	line-height: 300px;
+	margin: 0;
+}
+.about{
+  clear: none;
+  padding-bottom: 50px;
+  background-color: #0cf0ff;
+  width: 100%;
+}
+
+.about .hrWrapp hr{
+	background-color: white;
+	width: 300px;
+	height: 4px;
+	text-decoration: none;
+	border-radius: 15%;
+}
+
+.about i{
+  color: white;
+  font-size: 50px;
+  position: relative;
+  bottom: 45px;
+  background-color: #0cf0ff;
+  padding: 10px;
+	}
+.about h2{
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	padding-top: 40px;
+	font-family: 'Roboto Mono', monospace;
+}
+.twoTextAbout{
+	text-align: center;
+	width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+.firstTextAbout{
+	display: inline-block;
+	width: 20%;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+}
+.secondTextAbout{
+	display: inline-block;
+	width: 20%;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+}
+.about button{
+	background-color: #0cf0ff;
+	width: 200px;
+	height: 80px;
+	color: white;
+	font-size: 30px;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+.about button:hover{
+	color: black;
+	background-color: white;
+}
+
+.Contact{
+	margin-bottom: 50px;
+	margin-left: 320px;
+	margin-right: 320px;
+}
+
+.Contact form label{
+	font-size: 100px;
+	text-transform: uppercase;
+	display: block;
+	margin: 30px;
+	outline: o;
+}
+.Contact form input{
+	width: 100%;
+	border: 1px solid #d3e5ec;
+	height: 80px;
+	padding-left: 20px;
+	color: #64b6e9;
+	text-decoration: none;
+	font-size: 35px;
+	outline: none;
+	border: none;
+}
+.Contact h3{
+	text-align: center;
+	font-size: 65px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.Contact .hrWrapp hr{
+	background-color: black;
+	width: 300px;
+	height: 4px;
+	text-decoration: none;
+	border-radius: 25%;
+}
+
+.Contact i{
+  font-size: 50px;
+  color: #212b3d;
+  position: relative;
+  bottom: 45px;
+  background-color: white;
+  padding: 10px;
+}
+.Contact hr{
+	width: 100%;
+	height: 1%;
+}
+.lastButton{
+	margin-top: 100px;
+}
+.Contact .lastButton button{
+	font-size: 20px;
+	width: 120px;
+	height: 70px;
+	color: white;
+	border-radius: 15%;
+	background-color: #0cf0ff; 
+}
+.lastSection{
+	height: 300px;
+	margin-bottom: 0;
+	background-color: #303E5D;
+	width: 100%;
+	text-align: center;
+}
+.allWord{
+	display: inline-block;
+	width: 30%;
+	vertical-align: text-top;
+	margin: 15px;
+}
+.help{
+	margin-right: 15%;
+	margin-left: 15%;
+	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+}
+.lastSection .help .allWord h3{
+	color: white;
+	font-size: 27px;
+}
+.lastSection .help .allWord p{
+	color: white;
+	font-size: 22px;
+}
+
+.lastSection .help .allWord .lastHelp{
+	display: inline-block;
+}
+
+.lastSection .help .allWord .lastHelp a{
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+
+}
+
+.lastSection .help .allWord .btn i{
+	color: white;
+	background-color: black;
+	font-size: 30px;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 60%;
+	height: 35px;
+}
+.lastSection .help .allWord .btn i:hover{
+background-color: white;
+color: black;
+}
+.End{
+	width: 100%;
+	height: 100px;
+	background-color: #130A1F;
+	vertical-align: text-top;
+}
+.End h5{
+	text-align: center;
+	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	font-size: 13px;
+ 	color: white;
+ 	margin-top: 0;
+}
