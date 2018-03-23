@@ -42,39 +42,103 @@ header{
 
 
 @media only screen and (max-width: 500px) {
+
 	.nav{
 		display: none;
 	}
 
 	.desk{
 		display: block;
-		height: 65px;
+		height: 1px;
+		margin-bottom: 65px;
 	}
 	.big{
+		text-align: left;
+		font-size: 20px;		
+	}
+	.desk a i{
 		position: relative;
-		right: 140px;
-		font-size: 18px;
+		left: 30px;
+		top: 20px;
 	}
-	a{
-	position: relative;
-	left: 250px;
-	bottom: 35px;
-	font-size: 18px;
-	text-decoration: none;
+	section .start h2{
+		font-size: 45px;
 	}
-	a:focus{
-		color: blue;
+	section .start h3{
+		font-size: 25px;
 	}
-	img{
-		display: block;
+	section .start .gop i{
 		position: relative;
-		right: 425px;
-		height: 200px;
-		width: auto;
+		right: 40px;
 	}
-	.textPortfolio{
+	.portfolio{
+		height: 2000px;
+	}
+	.portfolio .vat h2{
+		font-size: 45px;
+	}
+	.portfolio .workExamples .workItemWrapp img{
+		height: 300px;
+		width: 300px;
 		position: relative;
-		right: 550px;
+		right: 105px;
+	}
+	.portfolio .workExamples .workItemWrapp{
+		width: 40%;
+		height: 5%;
+	}
+	section .about{
+		height: 800px;
+	}
+	section .about .twoTextAbout .firstTextAbout{
+		width: 35%;
+		font-size: 15px;
+		margin: 0;
+		position: relative;
+		bottom: 40px;
+	}
+	section .about .twoTextAbout .secondTextAbout{
+		width: 35%;
+		font-size: 15px;
+		margin: 0;
+		position: relative;
+		bottom: 40px;
+	}
+	section .Contact {
+		position: relative;
+		right: 300px;
+		height: 900px;
+	}
+	section .Contact h3{
+		font-size: 45px;
+	}
+	section .Contact .dave i{
+		margin-left: 90px;
+	}
+	section .Contact form label{
+		width: 250px;
+		height: 60px;
+		outline: 1px solid #666;
+		border-radius: 15%;
+		margin: 0;
+	}
+	section .Contact form input{
+		color: black;
+	}
+	section .Contact .lastButton button{
+		position: relative;
+		bottom: 150px;
+	}
+	section .lastSection{
+		height: 750px;
+	}
+	section .lastSection .help .allWord{
+		width: 100%;
+		position: relative;
+		right: 20px;
+	}
+	section .lastSection .help .allWord h3{
+		font-size: 25px;
 	}
 }
 
@@ -132,7 +196,7 @@ header{
 
 .start hr{
 	background-color: white;
-	width: 300px;
+	width: 250px;
 	height: 4px;
 	text-decoration: none;
 	border-radius: 15%;
@@ -140,7 +204,7 @@ header{
 
 .portfolio .hrWrapp hr{
 	background-color: #0cf0ff;
-	width: 300px;
+	width: 250px;
 	height: 4px;
 	text-decoration: none;
 	border-radius: 15%;
@@ -312,7 +376,7 @@ header{
 
 .Contact .hrWrapp hr{
 	background-color: black;
-	width: 300px;
+	width: 250px;
 	height: 4px;
 	text-decoration: none;
 	border-radius: 25%;
